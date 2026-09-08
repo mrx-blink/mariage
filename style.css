@@ -52,6 +52,7 @@
     background: var(--white);
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
+    overflow-x: hidden;
   }
   
   a{ color: inherit; }
@@ -339,6 +340,7 @@
     box-shadow: 0 12px 30px -12px rgba(0,0,0,.25);
   }
   .photos-frame{
+    position: relative;
     margin: 2rem auto 0;
     max-width: 420px;
     padding: 4rem 2rem;
@@ -415,6 +417,158 @@
   }
   .site-footer .amp{ color: var(--sanguine); }
   
+  /* ---------- Stickers ---------- */
+  .site-header{ position:relative; }
+  .panel-inner{ position:relative; }
+
+  .sticker{
+    position:absolute;
+    pointer-events:none;
+    user-select:none;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,.14));
+    z-index: 2;
+  }
+
+  /* En-tête */
+  .sticker--header-oiseau{
+    top: 3rem;
+    left: 15%;
+    width: 120px;
+    transform: rotate(7deg);
+  }
+  .sticker--header-poisson{
+    top: 4rem;
+    right: 15%;
+    width: 150px;
+    transform: rotate(11deg);
+  }
+
+  /* Programme */
+  .sticker--oiseau1{
+    top: -2.2rem;
+    left: -1.2rem;
+    width: 90px;
+    transform: rotate(-8deg);
+  }
+  .sticker--fleur-diner{
+    left: calc(100% + 1.5rem);
+    top: -1rem;
+    width: 112px;
+    transform: rotate(-6deg);
+  }
+  .sticker--etoile-ch2{
+    top: .3rem;
+    left: -2.2rem;
+    width: 58px;
+    transform: rotate(-12deg);
+  }
+  .sticker--poisson-ch2{
+    top: 7rem;
+    right: .5rem;
+    width: 74px;
+    transform: rotate(-8deg);
+  }
+
+  /* RSVP */
+  .sticker--etoile-rsvp{
+    top: .25rem;
+    right: 8%;
+    width: 66px;
+    transform: rotate(-14deg);
+  }
+  .sticker--fleur-rsvp{
+    bottom: -.5rem;
+    left: 6%;
+    width: 40px;
+    transform: rotate(15deg);
+  }
+  .sticker--oiseau-note{
+    top: -1rem;
+    left: 1rem;
+    width: 46px;
+    transform: rotate(-11deg);
+  }
+
+  /* Hébergement */
+  .sticker--crabe{
+    top: .25rem;
+    right: -.5rem;
+    width: 110px;
+    transform: rotate(8deg);
+  }
+  .sticker--poisson-heberg{
+    top: .25rem;
+    left: -.5rem;
+    width: 50px;
+    transform: rotate(-12deg);
+  }
+  .sticker--etoile-heberg-note{
+    top: -.75rem;
+    right: 1rem;
+    width: 42px;
+    transform: rotate(13deg);
+  }
+
+  /* Liste de mariage */
+  .sticker--fleur-liste{
+    top: .25rem;
+    left: 10%;
+    width: 64px;
+    transform: rotate(-11deg);
+  }
+  .sticker--oiseau-liste{
+    bottom: -1rem;
+    right: 8%;
+    width: 56px;
+    transform: rotate(9deg);
+  }
+  .sticker--etoile-liste{
+    top: .25rem;
+    right: 10%;
+    width: 36px;
+    transform: rotate(18deg);
+  }
+
+  /* Photos */
+  .sticker--poisson{
+    top: .25rem;
+    left: 6%;
+    width: 82px;
+    transform: rotate(-9deg);
+  }
+  .sticker--fleur-photos{
+    top: .25rem;
+    right: 10%;
+    width: 46px;
+    transform: rotate(14deg);
+  }
+  .sticker--oiseau-frame{
+    bottom: -1rem;
+    right: -.5rem;
+    width: 50px;
+    transform: rotate(12deg);
+  }
+
+  /* FAQ */
+  .sticker--etoile-faq{
+    top: .25rem;
+    left: -.25rem;
+    width: 60px;
+    transform: rotate(12deg);
+  }
+  .sticker--crabe-faq{
+    bottom: -1.25rem;
+    right: -.5rem;
+    width: 68px;
+    transform: rotate(-9deg);
+  }
+  .sticker--fleur-faq{
+    top: .25rem;
+    right: 12%;
+    width: 38px;
+    transform: rotate(-15deg);
+  }
+
   /* ---------- Responsive ---------- */
   @media (max-width: 640px){
     .site-header{ padding: 2.5rem 1rem 1.5rem; }
@@ -424,5 +578,29 @@
     .cards{ grid-template-columns: 1fr; }
     .chapter__ghost{ top: -.6rem; opacity: .08; }
     .timeline__item{ flex-direction: column; gap: .2rem; }
+
+    .sticker{ filter: drop-shadow(0 5px 10px rgba(0,0,0,.12)); }
+    .sticker--header-fleur{ width: 32px; top: 1.7rem; left: 2%; }
+    .sticker--header-oiseau{ width: 46px; top: -.5rem; left: 4%; }
+    .sticker--header-poisson{ width: 44px; top: -.25rem; right: 3%; }
+    .sticker--oiseau1{ width: 54px; top: -1.1rem; left: -.5rem; }
+    .sticker--fleur-diner{ width: 44px; left: auto; right: 0; top: -1.4rem; }
+    .sticker--etoile-ch2{ width: 36px; top: .1rem; left: -.9rem; }
+    .sticker--poisson-ch2{ width: 50px; top: 4rem; right: .25rem; }
+    .sticker--etoile-rsvp{ width: 44px; top: .25rem; right: 4%; }
+    .sticker--fleur-rsvp{ width: 28px; bottom: -.25rem; left: 4%; }
+    .sticker--oiseau-note{ width: 32px; top: -.5rem; left: .5rem; }
+    .sticker--crabe{ width: 74px; top: .25rem; right: -.25rem; }
+    .sticker--poisson-heberg{ width: 36px; top: 0; left: -.25rem; }
+    .sticker--etoile-heberg-note{ width: 30px; top: -.5rem; right: .5rem; }
+    .sticker--fleur-liste{ width: 44px; top: .25rem; left: 4%; }
+    .sticker--oiseau-liste{ width: 38px; bottom: -.5rem; right: 4%; }
+    .sticker--etoile-liste{ width: 26px; top: .25rem; right: 6%; }
+    .sticker--poisson{ width: 56px; top: .25rem; left: 2%; }
+    .sticker--fleur-photos{ width: 32px; top: .25rem; right: 4%; }
+    .sticker--oiseau-frame{ width: 34px; bottom: -.5rem; right: -.25rem; }
+    .sticker--etoile-faq{ width: 42px; top: .25rem; left: -.25rem; }
+    .sticker--crabe-faq{ width: 48px; bottom: -.75rem; right: -.25rem; }
+    .sticker--fleur-faq{ width: 26px; top: .25rem; right: 6%; }
   }
   
