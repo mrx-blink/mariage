@@ -465,8 +465,8 @@
 
     .site-header__names{ font-size: clamp(1.7rem, 8vw, 2.2rem); }
 
-    .sticker--header-oiseau{ width: 68px; top: .75rem; left: 3%; }
-    .sticker--header-poisson{ width: 64px; top: 1.25rem; right: 2%; }
-    .sticker--footer--crabe{ width: 74px; top: 1rem; right: 1.5rem; }
+    .sticker--header-oiseau{ width: 68px; top: .75rem; left: 2.8%; }
+    .sticker--header-poisson{ width: 64px; top: 1.35rem; right: 2%; }
+    .sticker--footer--crabe{ width: 74px; top: 1.3rem; right: 1.8rem; }
   }
   
