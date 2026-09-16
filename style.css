@@ -204,7 +204,7 @@
   .chapter__ghost{
     position:absolute;
     top: -1.1rem;
-    right: -.25rem;
+    right: .9rem;
     font-size: clamp(4.5rem, 16vw, 8rem);
     font-weight: 600;
     font-style: italic;
@@ -446,7 +446,7 @@
   .site-footer{ position:relative; }
   .sticker--footer--crabe{
     top: 2.6rem;
-    right: 26rem;
+    right: 20rem;
     width: 150px;
     transform: rotate(8deg);
   }
@@ -460,7 +460,7 @@
     .tab{ padding: .85rem .55rem; font-size: .85rem; }
     .panel-inner{ padding: 2.5rem 1.25rem 3.5rem; }
     .cards{ grid-template-columns: 1fr; }
-    .chapter__ghost{ top: -.6rem; opacity: .08; }
+    .chapter__ghost{ top: .5rem; opacity: .08; }
     .timeline__item{ flex-direction: column; gap: .2rem; }
 
     .site-header__names{ font-size: clamp(1.7rem, 8vw, 2.2rem); }
