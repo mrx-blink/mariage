@@ -203,8 +203,8 @@
   
   .chapter__ghost{
     position:absolute;
-    top: -1.1rem;
-    right: .9rem;
+    top: .9rem;
+    right: -.25rem;
     font-size: clamp(4.5rem, 16vw, 8rem);
     font-weight: 600;
     font-style: italic;
